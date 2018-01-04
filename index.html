@@ -1,0 +1,453 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<!--<base href="http://www.appshot.net"/>
+<link href="/res/images/appshot.ico" rel="shortcut icon" />
+<link rel="stylesheet" type="text/css" href="/res/styles/common.css#v=20110518" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="/res/styles/jquery.suggest.css" type="text/css" media="screen"/>
+<script type="text/javascript" src="/res/js/jquery.n_suggest.js"></script>
+<script type="text/javascript" src="/res/js/shapi.js#v=20110518"></script>
+<meta name="viewport" content="width=device-width, user-scalable=yes" />
+<link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="/res/styles/ipad.css" type="text/css" />
+<script src="https://www.google.com/jsapi?key=ABQIAAAAFmrF0MdvAizZsyKJJ0FY8hTYbWHMOA4bXyOj5sWNP3OF6JIl-BQiNLTyhwxX3miHvR53rSRz86Ph0Q" type="text/javascript"></script>
+
+<title>新聞台＠智慧好程式 :: Appshot.net</title>
+<meta content=":: 行動科技發燒新聞，每日搶先報，最新訊息不漏接。" name="description" />
+
+
+<link rel="stylesheet" type="text/css" href="/res/styles/news_list.css#v=20110518" />
+<script type="text/javascript" src="/res/js/news_list.js#v=20110518" charset="utf8"></script>
+
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.appshot.net/op/news.rss">!-->
+<style>
+div, p, img,a{margin: 0; padding:0px; border:0;}
+body{margin: 0;background:#efefef;line-height:20px;color:#000;text-align:left;font-size:13px;margin:0 auto;padding:0px;}
+a img {border:medium none; }
+a {color:#666666;text-decoration: none;padding:0px;margin:0px;}
+a:hover {text-decoration:underline;color:#58ba02;}
+
+ul{padding:0px;margin:0;list-style-type:none;}
+#main{margin: 0 auto;paddind:0px;}
+
+.content{width:100%;color:#000;font-size:13px;overflow:hidden;margin:0 auto;padding:0px;font-family:"";line-height:20px;}
+.content_box{}
+
+.title{width:974px;margin:0;margin:15px auto;padding:0px;overflow:hidden;}
+.title img{padding-right:5px;padding-top:7px;float:left}
+h1{font-size:27px;font-family:"微軟正黑體";font-weight:normal;letter-spacing:0.2em;vertical-align:center;float:left;*padding:10px;}
+.sub-title{float:left;font-size:13px;font-family:"微軟正黑體";padding-top:20px;padding-left:10px;*padding:10px;}
+h2{color:#58ba02;font-size:18px;font-family:"微軟正黑體";line-height:28px;height:28px;overflow:hidden;padding-top:5px}
+h2 main_title{font-size:20px;}
+h3{line-height: 34px; height:70px; letter-spacing: 0em; overflow:hidden; font-weight: bold; font-size:25px; height:30px; margin:5px;font-family:"微軟正黑體"; text-decoration: none ;}
+h4{margin: 0; font-size:20px;font-family:"微軟正黑體";font-weight:normal;letter-spacing:0.1em;vertical-align:center;float:left;*padding:10px;}
+
+/*主圖區域*/
+.main_billboard_bg{height:384px;width:100%;background:#d6d6d6;overflow:hidden; position:relative; z-index:1;overflow:hidden;}
+.main_billboard{position:relative; width:938px;height:309px;background:#fff;margin: 0 auto;padding:0px;overflow:hidden;line-height:28px;font-size:15px;}
+.main_pic{overflow:hidden;max-width:600px;float:left;height:352px;}
+.main_pic img{max-width:600px;height:352px;}
+.main_content{width:305px;height:352px;float:left;margin-left:35px;}
+.m_time{margin-top:50px;color:#666666;}
+.m_text{height:115px;overflow:hidden;}
+.m_category{width:329px; height:42px; margin-top: 15px ; padding:12px 0; border-bottom:2px dotted #EFEFEF;}
+.m_category img{float:left}
+.m_title{display:inlink-block;}
+.add_abox{width:990px;height:309px; margin:0 auto;position:relative}
+
+.add_back{float:left; margin-top:188px; margin-right:10px; width:16px; height:31px;}
+.add_next{float:right; margin-top:188px; margin-left:10px; width:16px; height:31px;}
+.float_box{ position:absolute; top:73px; left:-220px; overflow:hidden;width:194px; height:182px; border:3px solid #fe7318; background-color:#FFF; padding:5px 6px;}
+.q4 {
+    float: left;
+    height: 113px;
+    width: 68px;
+	padding:0 8px;
+}
+
+.q1 {
+    float: left;
+    height: 62px;
+    position: absolute;
+    width: 62px;
+    z-index: 0;
+}
+
+.mask62 {
+    background: url("images/mask60.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 63px;
+    position: absolute;
+    width: 62px;
+    z-index: 1;
+}
+
+.the_top{width:902px; height:136px; border-bottom:1px solid #D6D6D6;margin: 0 auto; margin-top:8px; padding-bottom:10px; }
+.appicon{height: 63px;width: 62px;}
+.appname{line-height: 14px; height:30px; letter-spacing: 0em; font-size:12px;  margin:8px 2px;font-family:"微軟正黑體"; text-decoration: none ; color:#333;}
+.the_crown{height:24px;margin-top:8px; margin-left:68px;}
+
+.main_outside{width:938px;height:378px;float: left;}
+.main_menu{width:938px;height:48px;}
+.green_box{top: 27px; float:right; background:url("images/green_box1.png") no-repeat scroll 0 0 ; width:139px; height:30px; position:relative; z-index:5;right: 20px;}
+.country{width:225px; height:34px;position:relative; float:left; z-index:5;top: 20px; left:40px; }
+.cy{width:68px; height:34px; color:#FFF;font-family:"微軟正黑體"; font-size:14px; font-weight:bold;text-align:center;letter-spacing:5px; padding:3px 1px 0px 3px;}
+.box1{float:left; background:url("images/orange_box.png") no-repeat scroll 0 0 ; }
+.box2{float:left; background:url("images/gray_box.png") no-repeat scroll 0 0 ; }
+.box3{float:left; background:url("images/gray_box.png") no-repeat scroll 0 0 ; }
+
+
+/*分區塊*/
+.all_list_box{width:1008px;margin:20px auto;padding:0px 0px 0px 20px;}
+.all_list1{width:1008px;padding-bottom:20px;overflow:hidden;margin:0px auto;}
+
+.list{background:#fff;width:316px;height:382px;border:1px solid #d8d8d8;float:left;margin-right:18px;overflow:hidden;}
+.list_pic{width:316px;height:210px;}
+.list_pic img{width:316px;height:210px;}
+.list_content{width:256px;height:160px;margin:0px auto; overflow:hidden; z-index:0;}
+.list_text{width:256px;height:50px;overflow:hidden;position:relative;bottom:-15px;line-height:25px;}
+
+.plus{overflow:hidden;padding-top:5px;z-index:1;top:-20px;position:relative;}
+.plus img{float:right;}
+
+.hotapp_title{width:988px;height:40px; padding:25px 0;}
+</style>
+</head>
+<body>
+<div class="content">
+	<div class="content_box">
+		<div class="title">
+			<img src="images/cut_03.png"></img><h1>排行榜</h1><span class="sub-title">超人氣熱門下載，每日更新台、美、日TOP 10好程式排行資訊。</span>
+		</div>
+		<div class="main_billboard_bg">
+		
+		<div class="add_abox" style="position:relative">
+		
+			
+			<div class="add_back" ><a href="#"><img style="width:16px; height:31px;" src="images/back_g.png"/></a></div>
+			<div class="add_next" ><a href="#"><img style="width:16px; height:31px;" src="images/next_g.png"/></a></div>
+			
+			<div class="main_outside">
+				<div class="main_menu">
+					<div class="country">
+						<a href="#"><div class="cy box1">台   灣</div></a>
+						<a href="#"><div class="cy box2">美   國</div></a>
+						<a href="#"><div class="cy box3">日   本</div></a>
+					</div>
+					<div class="green_box">
+						<div style="margin:0 auto; width:115px; height:15px;">
+							<a href="#"><span style="padding:0 4px;height:15px; width:57px;color:#FFF; font-weight: bold;">iPhone</span ></a>
+							<span style="color:#FFF; font-weight: bold;"> |</span>
+							<a href="#"><span style="padding:0 12px; color:#000;"> iPad</span></a>
+						</div>	
+					</div>
+				</div>	
+				<div class="main_billboard">
+					
+					<div class="the_top">
+						<div class="the_crown"><img src="images/crown.png"/></div>
+						<div style="float:left; width:22px; height:62px;margin-right:16px;margin-left:5px;"><img src="images/free.png"/></div>
+						<div class="q4">
+							<a class="" href="http://www.appshot.net/op/skill?pid=109">
+								<div class="appicon">
+								<img class="q1" src="http://images.appshot.net/images/apps/icon4fc24fc3320fa">
+								<span class="mask62"></span>
+								</div>
+								<div class="appname">Facebook Camera</div>
+							</a>
+							
+						</div>
+						<div class="q4">
+							<a class="" href="http://www.appshot.net/op/skill?pid=109">
+								<div class="appicon">
+								<img class="q1" src="http://images.appshot.net/images/apps/icon4fc24fc3320fa">
+								<span class="mask62"></span>
+								</div>
+								<div class="appname">Facebook Camera</div>
+							</a>
+							
+						</div>
+						<div class="q4">
+							<a class="" href="http://www.appshot.net/op/skill?pid=109">
+								<div class="appicon">
+								<img class="q1" src="http://images.appshot.net/images/apps/icon4fc24fc3320fa">
+								<span class="mask62"></span>
+								</div>
+								<div class="appname">Facebook Camera</div>
+							</a>
+							
+						</div>
+						<div class="q4">
+							<a class="" href="http://www.appshot.net/op/skill?pid=109">
+								<div class="appicon">
+								<img class="q1" src="http://images.appshot.net/images/apps/icon4fc24fc3320fa">
+								<span class="mask62"></span>
+								</div>
+								<div class="appname">Facebook Camera</div>
+							</a>
+							
+						</div>
+						<div class="q4">
+							<a class="" href="http://www.appshot.net/op/skill?pid=109">
+								<div class="appicon">
+								<img class="q1" src="http://images.appshot.net/images/apps/icon4fc24fc3320fa">
+								<span class="mask62"></span>
+								</div>
+								<div class="appname">Facebook Camera</div>
+							</a>
+							
+						</div>
+						<div class="q4">
+							<a class="" href="http://www.appshot.net/op/skill?pid=109">
+								<div class="appicon">
+								<img class="q1" src="http://images.appshot.net/images/apps/icon4fc24fc3320fa">
+								<span class="mask62"></span>
+								</div>
+								<div class="appname">Facebook Camera</div>
+							</a>
+							
+						</div>
+						<div class="q4">
+							<a class="" href="http://www.appshot.net/op/skill?pid=109">
+								<div class="appicon">
+								<img class="q1" src="http://images.appshot.net/images/apps/icon4fc24fc3320fa">
+								<span class="mask62"></span>
+								</div>
+								<div class="appname">Facebook Camera</div>
+							</a>
+							
+						</div>
+						<div class="q4">
+							<a class="" href="http://www.appshot.net/op/skill?pid=109">
+								<div class="appicon">
+								<img class="q1" src="http://images.appshot.net/images/apps/icon4fc24fc3320fa">
+								<span class="mask62"></span>
+								</div>
+								<div class="appname">Facebook Camera</div>
+							</a>
+							
+						</div>
+						<div class="q4">
+							<a class="" href="http://www.appshot.net/op/skill?pid=109">
+								<div class="appicon">
+								<img class="q1" src="http://images.appshot.net/images/apps/icon4fc24fc3320fa">
+								<span class="mask62"></span>
+								</div>
+								<div class="appname">Facebook Camera</div>
+							</a>
+							
+						</div>
+						<div class="q4">
+							<a class="" href="http://www.appshot.net/op/skill?pid=109">
+								<div class="appicon">
+								<img class="q1" src="http://images.appshot.net/images/apps/icon4fc24fc3320fa">
+								<span class="mask62"></span>
+								</div>
+								<div class="appname">Facebook Camera</div>
+							</a>
+							
+						</div>
+					</div>
+					<div class="the_top" >
+						<div class="the_crown"><img src="images/crown.png"/></div>
+						<div style="float:left; width:22px; height:62px;margin-right:16px;margin-left:5px;"><img src="images/pay.png"/></div>
+						<div class="q4">
+							<a class="" href="http://www.appshot.net/op/skill?pid=109">
+								<div class="appicon">
+								<img class="q1" src="http://images.appshot.net/images/apps/icon4fc24fc3320fa">
+								<span class="mask62"></span>
+								</div>
+								<div class="appname">Facebook Camera</div>
+							</a>
+							
+						</div>
+						<div class="q4">
+							<a class="" href="http://www.appshot.net/op/skill?pid=109">
+								<div class="appicon">
+								<img class="q1" src="http://images.appshot.net/images/apps/icon4fc24fc3320fa">
+								<span class="mask62"></span>
+								</div>
+								<div class="appname">Facebook Camera</div>
+							</a>
+							
+						</div>
+						<div class="q4">
+							<a class="" href="http://www.appshot.net/op/skill?pid=109">
+								<div class="appicon">
+								<img class="q1" src="http://images.appshot.net/images/apps/icon4fc24fc3320fa">
+								<span class="mask62"></span>
+								</div>
+								<div class="appname">Facebook Camera</div>
+							</a>
+							
+						</div>
+						<div class="q4">
+							<a class="" href="http://www.appshot.net/op/skill?pid=109">
+								<div class="appicon">
+								<img class="q1" src="http://images.appshot.net/images/apps/icon4fc24fc3320fa">
+								<span class="mask62"></span>
+								</div>
+								<div class="appname">Facebook Camera</div>
+							</a>
+							
+						</div>
+						<div class="q4">
+							<a class="" href="http://www.appshot.net/op/skill?pid=109">
+								<div class="appicon">
+								<img class="q1" src="http://images.appshot.net/images/apps/icon4fc24fc3320fa">
+								<span class="mask62"></span>
+								</div>
+								<div class="appname">Facebook Camera</div>
+							</a>
+							
+						</div>
+						<div class="q4">
+							<a class="" href="http://www.appshot.net/op/skill?pid=109">
+								<div class="appicon">
+								<img class="q1" src="http://images.appshot.net/images/apps/icon4fc24fc3320fa">
+								<span class="mask62"></span>
+								</div>
+								<div class="appname">Facebook Camera</div>
+							</a>
+							
+						</div>
+						<div class="q4">
+							<a class="" href="http://www.appshot.net/op/skill?pid=109">
+								<div class="appicon">
+								<img class="q1" src="http://images.appshot.net/images/apps/icon4fc24fc3320fa">
+								<span class="mask62"></span>
+								</div>
+								<div class="appname">Facebook Camera</div>
+							</a>
+							
+						</div>
+						<div class="q4">
+							<a class="" href="http://www.appshot.net/op/skill?pid=109">
+								<div class="appicon">
+								<img class="q1" src="http://images.appshot.net/images/apps/icon4fc24fc3320fa">
+								<span class="mask62"></span>
+								</div>
+								<div class="appname">Facebook Camera</div>
+							</a>
+							
+						</div>
+						<div class="q4">
+							<a class="" href="http://www.appshot.net/op/skill?pid=109">
+								<div class="appicon">
+								<img class="q1" src="http://images.appshot.net/images/apps/icon4fc24fc3320fa">
+								<span class="mask62"></span>
+								</div>
+								<div class="appname">Facebook Camera</div>
+							</a>
+							
+						</div>
+						<div class="q4">
+							<a class="" href="http://www.appshot.net/op/skill?pid=109">
+								<div class="appicon">
+								<img class="q1" src="http://images.appshot.net/images/apps/icon4fc24fc3320fa">
+								<span class="mask62"></span>
+								</div>
+								<div class="appname">Facebook Camera</div>
+							</a>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		</div>
+		
+		<div class="all_list_box">
+			<div class="hotapp_title">
+				<h4>熱門APP</h4>
+				<img src="images/line_o.png"/>
+			</div>
+			<div class="all_list1">
+			
+				<div class="list">
+					<div class="list_pic"><a href=""><img src="images/pic_17.png"></img></a></div>
+					<div class="list_content">
+						<a href=""><h2>搭載Retina螢幕的新款MacBook Pro終於登場！</h2></a>
+						<div class="fb_like">
+						
+						<fb:like class=" fb_edge_widget_with_comment fb_iframe_widget" href="http://www.techbang.com/posts/9788" layout="button_count"><span style="height: 20px; width: 90px;"><iframe src="http://www.facebook.com/plugins/like.php?api_key=258434103148&amp;channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D8%23cb%3Df16b965721e1f36%26origin%3Dhttp%253A%252F%252Fwww.techbang.com%252Ff2dbd334a7b9446%26domain%3Dwww.techbang.com%26relation%3Dparent.parent&amp;extended_social_context=false&amp;href=http%3A%2F%2Fwww.techbang.com%2Fposts%2F9788&amp;layout=button_count&amp;locale=zh_TW&amp;node_type=link&amp;sdk=joey&amp;show_faces=false&amp;width=90" class="fb_ltr " title="Like this content on Facebook." style="border: medium none; overflow: hidden; height: 20px; width: 90px;" name="f1ab658a54eb058" id="f1db849346911ce" scrolling="no"></iframe></span></fb:like>
+  
+						</div>
+						<div class="list_text">
+							讓全球蘋果迷引頸期盼的 WWDC 大會終於在今天凌晨圓滿落幕了，之就如同先前預測，蘋果更新了多款 Mac 產線上的產品，不僅如此，甚至還推出了一款全新 MacBook Pro。
+							
+						</div>
+						
+					</div>
+					<div class="plus">
+						<a href="">
+						<img src="images/cut_21.png"></img>
+						</a>
+					</div>
+				</div>
+				
+				<div class="list">
+					<div class="list_pic"><a href=""><img src="images/pic_17.png"></a></img></div>
+					<div class="list_content">
+						<a href=""><h2>搭載Retina螢幕的新款MacBook Pro終於登場！</h2></a>
+						<div class="fb_like">
+							<fb:like class=" fb_edge_widget_with_comment fb_iframe_widget" href="http://www.techbang.com/posts/9788" layout="button_count"><span style="height: 20px; width: 90px;"><iframe src="http://www.facebook.com/plugins/like.php?api_key=258434103148&amp;channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D8%23cb%3Df16b965721e1f36%26origin%3Dhttp%253A%252F%252Fwww.techbang.com%252Ff2dbd334a7b9446%26domain%3Dwww.techbang.com%26relation%3Dparent.parent&amp;extended_social_context=false&amp;href=http%3A%2F%2Fwww.techbang.com%2Fposts%2F9788&amp;layout=button_count&amp;locale=zh_TW&amp;node_type=link&amp;sdk=joey&amp;show_faces=false&amp;width=90" class="fb_ltr " title="Like this content on Facebook." style="border: medium none; overflow: hidden; height: 20px; width: 90px;" name="f1ab658a54eb058" id="f1db849346911ce" scrolling="no"></iframe></span></fb:like>
+						</div>
+						<div class="list_text">
+							讓全球蘋果迷引頸期盼的 WWDC 大會終於在今天凌晨圓滿落幕了，之就如同先前預測，蘋果更新了多款 Mac 產線上的產品，不僅如此，甚至還推出了一款全新 MacBook Pro。
+							
+						</div>
+						
+					</div>
+					<div class="plus">
+						<a href="">
+						<img src="images/cut_21.png"></img>
+						</a>
+					</div>
+				</div>
+				<div class="list">
+					<div class="list_pic"><a href=""><img src="images/pic_17.png"></img></a></div>
+					<div class="list_content">
+						<a href=""><h2>搭載Retina螢幕的新款MacBook Pro終於登場！</h2></a>
+						<div class="fb_like">
+							<fb:like class=" fb_edge_widget_with_comment fb_iframe_widget" href="http://www.techbang.com/posts/9788" layout="button_count"><span style="height: 20px; width: 90px;"><iframe src="http://www.facebook.com/plugins/like.php?api_key=258434103148&amp;channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D8%23cb%3Df16b965721e1f36%26origin%3Dhttp%253A%252F%252Fwww.techbang.com%252Ff2dbd334a7b9446%26domain%3Dwww.techbang.com%26relation%3Dparent.parent&amp;extended_social_context=false&amp;href=http%3A%2F%2Fwww.techbang.com%2Fposts%2F9788&amp;layout=button_count&amp;locale=zh_TW&amp;node_type=link&amp;sdk=joey&amp;show_faces=false&amp;width=90" class="fb_ltr " title="Like this content on Facebook." style="border: medium none; overflow: hidden; height: 20px; width: 90px;" name="f1ab658a54eb058" id="f1db849346911ce" scrolling="no"></iframe></span></fb:like>
+						</div>
+						<div class="list_text">
+							讓全球蘋果迷引頸期盼的 WWDC 大會終於在今天凌晨圓滿落幕了，之就如同先前預測，蘋果更新了多款 Mac 產線上的產品，不僅如此，甚至還推出了一款全新 MacBook Pro。
+							
+						</div>
+						
+					</div>
+					<div class="plus">
+						<a href="">
+						<img src="images/cut_21.png"></img>
+						</a>
+					</div>
+				</div>
+				
+				
+			</div>
+		
+			<div class="all_list1">
+				
+				<!-- Facebook Fans-->
+					<div class="fb_box" style="width:623px; height:263px; padding:20px 14px; background-color:#FFF; float:left;border:1px solid #d8d8d8;margin-right: 18px;">
+						<div id="fb-root"></div><script src="http://connect.facebook.net/zh_TW/all.js#xfbml=1"></script><fb:like-box href="http://www.facebook.com/appshot.net" width="623" height="265" show_faces="true" stream="false" header="false" ></fb:like-box>
+					</div>
+				<!-- Facebook Fans-->
+				<div class="list" style="height:303px; border:1px solid #d8d8d8;">
+						<a href=""><img style="height:303px;" src="images/AD316x303.png"></img></a>
+						
+				</div>
+				<div style="clear:both;"></div>
+				
+				
+			</div>
+		</div>
+		
+	</div>	
+</div>
+</body>
+</html>
